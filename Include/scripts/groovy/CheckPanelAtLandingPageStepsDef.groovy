@@ -52,7 +52,7 @@ class CheckPanelAtLandingPageStepsDef {
 
 	@When("the user navigates to site")
 	def navigateToSite() {
-		WebUI.navigateToUrl('http://localhost:8080/')
+		WebUI.navigateToUrl('http://34.91.99.22/')
 	}
 
 	@Then("the user sees a panel at landing page")
