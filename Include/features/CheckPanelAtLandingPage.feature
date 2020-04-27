@@ -5,5 +5,5 @@ Feature: Check a panel at landing page
 
 Scenario: Check if a panel exists at landing page
 	Given the user has an open browser
-	When the user navigates do <site_name>
-	Then the user sees a panel <panel_id> at landing page
+	When the user navigates to site
+	Then the user sees a panel at landing page
