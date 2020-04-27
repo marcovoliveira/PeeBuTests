@@ -9,11 +9,11 @@
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
-   <testSuiteGuid>27100805-04ab-4988-a4ec-44fc155e0b6f</testSuiteGuid>
+   <testSuiteGuid>6f6b8ab8-b9b9-4a89-86b8-9382e4a01bca</testSuiteGuid>
    <testCaseLink>
-      <guid>6bc11843-017c-4b3f-8a97-dea0facc5efd</guid>
+      <guid>0d6f5446-1a1f-41aa-9f40-63bd10f6d5de</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TestCase</testCaseId>
+      <testCaseId>Test Cases/TestCaseFeatureCheckPanelAtLandingPage</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
