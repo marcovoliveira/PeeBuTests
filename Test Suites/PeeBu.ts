@@ -16,4 +16,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/TestCaseFeatureCheckPanelAtLandingPage</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>1dcb0534-7138-4d1a-9b23-e04d5a21b216</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TestCaseCheckTransactionsList</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
