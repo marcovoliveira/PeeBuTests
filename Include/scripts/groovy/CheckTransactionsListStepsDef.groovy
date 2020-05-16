@@ -44,14 +44,45 @@ import cucumber.api.java.en.When
 import internal.GlobalVariable as GlobalVariable
 
 
+class CheckTransactionsListStepsDef {
 
-class CheckPanelAtLandingPageStepsDef {
+	@Given("the user has an open browser")
+	def openBrowser() {
+		WebUI.openBrowser('')
+	}
 
-	
-	@Then("the user sees a panel at landing page")
-	def seePanel() {
-		WebUI.verifyElementPresent(findTestObject('Page_client/div_Dashboard'), 0)
-		WebUI.verifyElementPresent(findTestObject('Page_client/div_Settings'), 0)
+	@When("the user navigates to site")
+	def navigateToSite() {
+		WebUI.navigateToUrl(GlobalVariable.url)
+	}
+
+	@When("the user has the transaction option chosen at panel")
+	public void the_user_has_the_transaction_option_chosen_at_panel() {
+		WebUI.click(findTestObject('Object Repository/Page_client/i_Settings_v-icon notranslate mdi mdi-menu _d43718'))
+		WebUI.click(findTestObject('Page_client/div_Dashboard'))
+	}
+
+	@When("the user has some transactions")
+	public void the_user_has_some_transactions() {
+		WebUI.verifyElementVisible(findTestObject('Object Repository/Page_client/td_1'))
+	}
+
+	@Then("the user sees a transactions list")
+	public void the_user_sees_a_transactions_list() {
+		WebUI.verifyElementVisible(findTestObject('Page_client/div_Transactions Search'))
+
+		WebUI.verifyElementVisible(findTestObject('Object Repository/Page_client/th_Entity'))
+
+		WebUI.verifyElementVisible(findTestObject('Object Repository/Page_client/th_Id'))
+
+		WebUI.verifyElementVisible(findTestObject('Object Repository/Page_client/th_Amount'))
+
+		WebUI.verifyElementVisible(findTestObject('Object Repository/Page_client/th_Type'))
+
+		WebUI.verifyElementVisible(findTestObject('Object Repository/Page_client/th_Source'))
+
+		WebUI.verifyElementVisible(findTestObject('Object Repository/Page_client/th_Date'))
+
 		WebUI.closeBrowser()
 	}
 }

@@ -5,7 +5,7 @@ Feature: See a transactions list
 
 Scenario: Check if a transactions list exists
 	Given the user has an open browser
-	When the user navigates do <site_name>
-	And the user has the transaction option chosen at panel <panel_id>
+	When the user navigates to site
+	And the user has the transaction option chosen at panel
 	And the user has some transactions
-	Then the user sees a transactions list <list_id>
+	Then the user sees a transactions list 
