@@ -1,0 +1,92 @@
+#FeatureFiles = 0 / 15 (branches)
+
+Features NOT CONSIDERED
+- CreateTransaction
+- DeleteExistingTransaction
+- UpdateExistingTransaction
+
+
+*** Landing Page (CheckPanelAtLandingPage || CheckTransactionsList)
+- Happy Path - ok
+
+- Scenarios - 1
+>> how will you assess that all the transactions are presented on the list?
+>> what happens when the balance does not exist?
+>> what happens when the API Web Service is not available?
+
+- Test Setup and Teardown - 0
+
+
+
+
+*** Transaction Details (CheckMoreView || CheckTransactionDetails)
+- Happy Path - ok
+
+- Scenarios - 1
+>> what happens when I have no data?
+>> how can I check if the data presented is the data that should be presented?
+>> are all the columns related to the transaction info present?
+
+- Test Setup and Teardown - 0
+
+
+
+
+*** Transaction Classification (???)
+- Happy Path - ?
+
+- Scenarios - ?
+
+- Test Setup and Teardown - ?
+
+
+
+
+*** Identification of Unclassified Transactions (???)
+- Happy Path - ?
+
+- Scenarios - ?
+
+- Test Setup and Teardown - ?
+
+
+
+
+*** Filtering (CheckTransactionListFilteredByCategory || CheckTransactionsListFilteredByCategory || CheckTransactionsListFilteredByEntity)
+- Happy Path - ok
+
+
+- Scenarios - 2
+>> is it possible to have multiple filters applied?
+>> what happens if I  don't have any transaction?
+>> correct the name of the feature file that relates to filter by date
+
+- Test Setup and Teardown - 0
+
+
+
+
+*** Fully Classified Transactions List with Aggregate Information (CheckCategorizedTransactionsList || CheckTop5ExpensesAndTop3Income || CheckTransactionsChart || CheckTransactionsTimeline || CheckTransactionsListAtSpecificTimespan)
+- Happy Path - ok
+
+- Scenarios - 4
+>> what happens when there is no data?
+>> what happens if I don't have one single transaction classified?
+>> is there a way to only see the list of transactions that are classified?
+>> where are the tables?
+>> what happens if I don't have one single transaction classified?
+
+- Test Setup and Teardown - 0
+
+
+
+!!!!! Gherkin Usage
+Incorrect usage of tags without the adequate "Scenario Outline + Examples"
+
+No usage of "Scenario Outline + Examples"
+
+No usage of "Background" allowing a proper setup for the test scenarios
+
+#############
+Pipeline: Faltou confirmar acesso às apps em staging e production (comandos npm install e npm run em Publish to staging/Release to production?). licença do KS...
+
