@@ -41,6 +41,8 @@ import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
+import internal.GlobalVariable as GlobalVariable
+
 
 
 class CheckPanelAtLandingPageStepsDef {
@@ -52,13 +54,13 @@ class CheckPanelAtLandingPageStepsDef {
 
 	@When("the user navigates to site")
 	def navigateToSite() {
-		WebUI.navigateToUrl('http://34.91.99.22/')
+		WebUI.navigateToUrl(GlobalVariable.url)
 	}
 
 	@Then("the user sees a panel at landing page")
 	def seePanel() {
-		WebUI.verifyElementPresent(findTestObject('Page_client/div_More'), 0)
-		WebUI.verifyElementPresent(findTestObject('Page_client/div_Transictions'), 0)
+		WebUI.verifyElementPresent(findTestObject('Page_client/div_Dashboard'), 0)
+		WebUI.verifyElementPresent(findTestObject('Page_client/div_Settings'), 0)
 		WebUI.closeBrowser()
 	}
 }
