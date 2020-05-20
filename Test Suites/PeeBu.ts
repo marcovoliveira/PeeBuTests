@@ -22,4 +22,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/TestCaseCheckTransactionsList</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>edf185d2-93ef-4a52-afe4-1c75cdbc9222</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TestCaseCheckTransactionsListFilteredByEntity</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
