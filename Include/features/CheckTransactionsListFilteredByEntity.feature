@@ -5,8 +5,8 @@ Feature: See my transactions with category filter
 
 Scenario: Filter listed transactions list
 	Given the user has an open browser
-	When the user navigates to <site_name>
-	And the user has the transaction option chosen at panel <panel_id>
+	When the user navigates to site
+	And the user has the transaction option chosen at panel
 	And the user has some transactions
-	And the user click on the entity column <column_id> at the transactions list
+	And the user click on the entity column at the transactions list
 	Then the user sees a transactions list filtered by entity
