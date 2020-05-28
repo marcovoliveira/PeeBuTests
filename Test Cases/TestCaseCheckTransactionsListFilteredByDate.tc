@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TestCaseTransactionsListFilteredByDate</name>
+   <name>TestCaseCheckTransactionsListFilteredByDate</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>fb8285a0-335a-40f7-af3c-60311dba426a</testCaseGuid>

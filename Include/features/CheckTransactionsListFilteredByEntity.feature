@@ -1,7 +1,7 @@
-Feature: See my transactions with category filter
+Feature: See my transactions with entity filter
 	As a user
-	I want to filter my transactions by category
-	So that I can analyze my transactions by category
+	I want to filter my transactions by entity
+	So that I can analyze my transactions by entity
 
 Scenario: Filter listed transactions list
 	Given the user has an open browser
