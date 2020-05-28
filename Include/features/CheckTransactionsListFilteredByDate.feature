@@ -1,7 +1,7 @@
-Feature: See my transactions with category filter
+Feature: See my transactions with date filter
 	As a user
-	I want to filter my transactions by category
-	So that I can analyze my transactions by category
+	I want to filter my transactions by date
+	So that I can analyze my transactions by date
 
 Scenario: Filter listed transactions list
 	Given the user has an open browser
