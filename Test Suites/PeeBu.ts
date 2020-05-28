@@ -14,7 +14,7 @@
       <guid>c498e0e3-ed43-4686-b508-b9acd556af71</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TestCaseFeatureCheckPanelAtLandingPage</testCaseId>
+      <testCaseId>Test Cases/TestCaseCheckPanelAtLandingPage</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>df373612-c036-48fb-a30a-5ee754fe46d1</guid>
@@ -39,5 +39,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/TestCaseCheckTransactionListFilteredBySource</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>335cacd7-122f-4410-aba5-650326917b2d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TestCaseCheckCategorizeTransaction</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
