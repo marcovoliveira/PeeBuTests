@@ -6,7 +6,7 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://35.205.122.214/'</initValue>
+      <initValue>'http://34.78.106.18/'</initValue>
       <name>url</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
