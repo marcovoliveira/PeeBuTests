@@ -41,17 +41,24 @@ import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
-import internal.GlobalVariable as GlobalVariable
 
+class CheckCategorizeTransactionStepsDef {
 
+	@When("the user clicks to choose a category of a transaction")
+	public void the_user_clicks_at_a_category_icon_of_a_transaction() {
+		WebUI.click(findTestObject('Page_client/div_Choose a category'))
+	}
 
-class CheckPanelAtLandingPageStepsDef {
+	@When("the user selects a category at a categories selection")
+	public void the_user_selects_a_category_at_a_categories_lookup() {
+		WebUI.click(findTestObject('Object Repository/Page_client/i_Choose a category_v-icon notranslate mdi _e7fef0'))
+		WebUI.click(findTestObject('Object Repository/Page_client/div_Food'))
+		WebUI.click(findTestObject('Page_client/span_Save'))
+	}
 
-
-	@Then("the user sees a panel at landing page")
-	def seePanel() {
-		WebUI.verifyElementPresent(findTestObject('Page_client/div_Dashboard'), 0)
-		WebUI.verifyElementPresent(findTestObject('Page_client/div_Settings'), 0)
-		WebUI.closeBrowser()
+	@Then("the transaction is categorized")
+	public void the_transaction_is_categorized() {
+		WebUI.verifyElementVisible(findTestObject('Page_client/div_Data saved Close'))
+		WebUI.verifyElementVisible(findTestObject('Page_client/table1_Food'))
 	}
 }

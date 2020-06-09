@@ -41,17 +41,34 @@ import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
-import internal.GlobalVariable as GlobalVariable
 
 
+class CheckTransactionListFilteredByDateStepsDef {
+	/**
+	 * The step definitions below match with Katalon sample Gherkin steps
+	 */
+	@When("the user click on the date column at the transactions list")
+	public void the_user_click_on_the_date_column_at_the_transactions_list() {
+		WebUI.click(findTestObject('Page_client/span_Date'))
+	}
 
-class CheckPanelAtLandingPageStepsDef {
+	@Then("the user sees a transactions list filtered by date")
+	public void the_user_sees_a_transactions_list_filtered_by_date() {
+		WebDriver driver = DriverFactory.getWebDriver()
+		List<WebElement> tableElements = driver.findElements(By.cssSelector("#inspire tr td:nth-child(6)"));
+		ArrayList<String> tableValues = new ArrayList<String>();
+		for(int i=0; i < tableElements.size(); i++){
+			String str = tableElements.get(i).getText();
+			tableValues.add(str);
+		}
 
+		ArrayList<String> referenceValues = new ArrayList<String>();
+		for(int i=0; i < tableValues.size(); i++){
+			referenceValues.add(tableValues.get(i))
+		}
 
-	@Then("the user sees a panel at landing page")
-	def seePanel() {
-		WebUI.verifyElementPresent(findTestObject('Page_client/div_Dashboard'), 0)
-		WebUI.verifyElementPresent(findTestObject('Page_client/div_Settings'), 0)
-		WebUI.closeBrowser()
+		Collections.sort(referenceValues)
+
+		assert referenceValues.equals(tableValues)
 	}
 }

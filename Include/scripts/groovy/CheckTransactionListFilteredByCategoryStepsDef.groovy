@@ -41,17 +41,40 @@ import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
-import internal.GlobalVariable as GlobalVariable
 
 
+class CheckTransactionListFilteredByCategoryStepsDef {
 
-class CheckPanelAtLandingPageStepsDef {
+	@Given("a categorized list of transactions")
+	public void a_categorized_list_of_transactions() {
+		WebUI.click(findTestObject('Page_client/div_Choose a category'))
+		WebUI.click(findTestObject('Object Repository/Page_client/i_Choose a category_v-icon notranslate mdi _e7fef0'))
+		WebUI.click(findTestObject('Object Repository/Page_client/div_Food'))
+		WebUI.click(findTestObject('Page_client/span_Save'))
+	}
 
+	@When("the user click on the category column at the transactions list")
+	public void the_user_click_on_the_category_column_at_the_transactions_list() {
+		WebUI.click(findTestObject('Page_client/span_Category'))
+	}
 
-	@Then("the user sees a panel at landing page")
-	def seePanel() {
-		WebUI.verifyElementPresent(findTestObject('Page_client/div_Dashboard'), 0)
-		WebUI.verifyElementPresent(findTestObject('Page_client/div_Settings'), 0)
-		WebUI.closeBrowser()
+	@Then("the user sees a transactions list filtered by category")
+	public void the_user_sees_a_transactions_list_filtered_by_category() {
+		WebDriver driver = DriverFactory.getWebDriver()
+		List<WebElement> tableElements = driver.findElements(By.cssSelector("#inspire tr td:nth-child(7)"));
+		ArrayList<String> tableValues = new ArrayList<String>();
+		for(int i=0; i < tableElements.size(); i++){
+			String str = tableElements.get(i).getText();
+			tableValues.add(str);
+		}
+
+		ArrayList<String> referenceValues = new ArrayList<String>();
+		for(int i=0; i < tableValues.size(); i++){
+			referenceValues.add(tableValues.get(i))
+		}
+
+		Collections.sort(referenceValues)
+
+		assert referenceValues.equals(tableValues)
 	}
 }
