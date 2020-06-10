@@ -59,6 +59,13 @@ class CheckEmptyTransactionListStepsDef {
 
 		// Write code here that turns the phrase above into concrete actions
 	}
+	
+	@When("the user change api url {string}")
+	public void the_user_change_api_url(String api) {
+		WebUI.click(findTestObject('Object Repository/Page_client/button_API_v-icon notranslate v-icon--link _e3e81b'))
+		WebUI.setText(findTestObject('Page_client/input_API_input-77'), api)
+		WebUI.click(findTestObject('Page_client/span_Update'))
+	}
 
 	@When("the user refresh the transaction list")
 	public void the_user_refresh_the_transaction_list() {
