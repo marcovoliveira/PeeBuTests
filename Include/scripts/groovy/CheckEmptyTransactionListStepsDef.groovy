@@ -59,7 +59,7 @@ class CheckEmptyTransactionListStepsDef {
 
 		// Write code here that turns the phrase above into concrete actions
 	}
-	
+
 	@When("the user change api url {string}")
 	public void the_user_change_api_url(String api) {
 		WebUI.click(findTestObject('Object Repository/Page_client/button_API_v-icon notranslate v-icon--link _e3e81b'))
