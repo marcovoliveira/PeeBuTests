@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Data saved Close</name>
+   <name>button_Balance -2864557 _v-app-bar__nav-ico_365f6e</name>
    <tag></tag>
-   <elementGuidId>dcdf2f9a-c1df-4c6f-9f5a-c4f990b84acb</elementGuidId>
+   <elementGuidId>7052571f-24d2-4a7a-b207-6794e5974ec1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='inspire']/div/div/div/div[3]/div/div</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>id(&quot;inspire&quot;)/div[@class=&quot;v-application--wrap&quot;]/div[@class=&quot;home&quot;]/div[@class=&quot;v-card v-sheet theme--dark&quot;]/div[@class=&quot;v-snack v-snack--active v-snack--bottom&quot;]/div[@class=&quot;v-snack__wrapper success&quot;]/div[@class=&quot;v-snack__content&quot;]</value>
+         <value>//button[@type='button']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,62 +17,62 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>v-snack__content</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value> Data saved Close</value>
+      <value>v-app-bar__nav-icon v-btn v-btn--flat v-btn--icon v-btn--round theme--dark v-size--default</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;inspire&quot;)/div[@class=&quot;v-application--wrap&quot;]/div[@class=&quot;home&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;v-snack v-snack--active v-snack--bottom v-snack-transition-leave-active v-snack-transition-leave-to&quot;]/div[@class=&quot;v-snack__wrapper success&quot;]/div[@class=&quot;v-snack__content&quot;]</value>
+      <value>id(&quot;inspire&quot;)/div[@class=&quot;v-application--wrap&quot;]/header[@class=&quot;v-sheet v-sheet--tile theme--dark v-toolbar v-app-bar v-app-bar--clipped v-app-bar--fixed&quot;]/div[@class=&quot;v-toolbar__content&quot;]/button[@class=&quot;v-app-bar__nav-icon v-btn v-btn--flat v-btn--icon v-btn--round theme--dark v-size--default&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@type='button']</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='inspire']/div/div/div/div[3]/div/div</value>
+      <value>//div[@id='inspire']/div/header/div/button</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Choose a category...'])[8]/following::div[18]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Settings'])[1]/following::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='© 2020'])[1]/preceding::div[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Data saved']/parent::*</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PeeBu'])[1]/preceding::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div/div/div[3]/div/div</value>
+      <value>//button</value>
    </webElementXpaths>
 </WebElementEntity>

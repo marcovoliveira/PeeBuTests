@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Dashboard</name>
+   <name>i_Balance -2864557 _v-icon notranslate mdi _b18aa0</name>
    <tag></tag>
-   <elementGuidId>9a7093d7-4011-45a8-9a7a-04b5ef909368</elementGuidId>
+   <elementGuidId>61b7938f-8f23-4e46-89a5-291ba5eaef9c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='inspire']/div/nav/div/div/a/div[2]</value>
+         <value>//div[@id='inspire']/div/header/div/button/span/i</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -17,48 +17,41 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
+      <value>i</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-hidden</name>
+      <type>Main</type>
+      <value>true</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>v-list-item__content</value>
+      <value>v-icon notranslate mdi mdi-menu theme--dark</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>Dashboard</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;inspire&quot;)/div[@class=&quot;v-application--wrap&quot;]/nav[@class=&quot;v-navigation-drawer v-navigation-drawer--clipped v-navigation-drawer--fixed v-navigation-drawer--is-mobile v-navigation-drawer--open theme--dark&quot;]/div[@class=&quot;v-navigation-drawer__content&quot;]/div[@class=&quot;v-list v-sheet v-sheet--tile theme--dark v-list--dense&quot;]/a[@class=&quot;v-list-item v-list-item--link theme--dark&quot;]/div[@class=&quot;v-list-item__content&quot;]</value>
+      <value>id(&quot;inspire&quot;)/div[@class=&quot;v-application--wrap&quot;]/header[@class=&quot;v-sheet v-sheet--tile theme--dark v-toolbar v-app-bar v-app-bar--clipped v-app-bar--fixed&quot;]/div[@class=&quot;v-toolbar__content&quot;]/button[@class=&quot;v-app-bar__nav-icon v-btn v-btn--flat v-btn--icon v-btn--round theme--dark v-size--default&quot;]/span[@class=&quot;v-btn__content&quot;]/i[@class=&quot;v-icon notranslate mdi mdi-menu theme--dark&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='inspire']/div/nav/div/div/a/div[2]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Settings'])[1]/preceding::div[3]</value>
+      <value>//div[@id='inspire']/div/header/div/button/span/i</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//a/div[2]</value>
+      <value>//span/i</value>
    </webElementXpaths>
 </WebElementEntity>

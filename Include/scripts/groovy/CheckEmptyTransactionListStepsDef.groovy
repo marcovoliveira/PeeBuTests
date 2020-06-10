@@ -43,13 +43,30 @@ import cucumber.api.java.en.When
 
 
 
-class CheckPanelAtLandingPageStepsDef {
+class CheckEmptyTransactionListStepsDef {
 
+	@When("the user has the settings option chosen at panel")
+	public void the_user_has_the_settings_option_chosen_at_panel() {
+		WebUI.click(findTestObject('Object Repository/Page_client/button_Balance -2864557 _v-app-bar__nav-ico_365f6e'))
+		WebUI.click(findTestObject('Object Repository/Page_client/a_Settings'))
+	}
 
-	@Then("the user sees a panel at landing page")
-	def seePanel() {
-		WebUI.verifyElementPresent(findTestObject('Page_client/div_Dashboard'), 0)
-		WebUI.verifyElementPresent(findTestObject('Page_client/div_Settings'), 0)
-		WebUI.closeBrowser()
+	@When("the user change api url")
+	public void the_user_change_api_url_to_api() {
+		WebUI.click(findTestObject('Object Repository/Page_client/button_API_v-icon notranslate v-icon--link _e3e81b'))
+		WebUI.setText(findTestObject('Page_client/input_API_input-77'), "https://5ee0225c9ed06d001696db5d.mockapi.io/empty/empty")
+		WebUI.click(findTestObject('Page_client/span_Update'))
+
+		// Write code here that turns the phrase above into concrete actions
+	}
+
+	@When("the user refresh the transaction list")
+	public void the_user_refresh_the_transaction_list() {
+		WebUI.click(findTestObject('Page_client/i_Transactions_v-icon notranslate mdi mdi-r_2ee13d'))
+	}
+
+	@Then("the user sees an empty transactions list")
+	public void the_user_sees_an_empty_transactions_list() {
+		WebUI.verifyElementVisible(findTestObject('Page_client/td_No data available'))
 	}
 }

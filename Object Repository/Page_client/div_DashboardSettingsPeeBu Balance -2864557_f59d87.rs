@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Dashboard</name>
+   <name>div_DashboardSettingsPeeBu Balance -2864557_f59d87</name>
    <tag></tag>
-   <elementGuidId>9a7093d7-4011-45a8-9a7a-04b5ef909368</elementGuidId>
+   <elementGuidId>f526819b-792e-4778-8e0b-a75c2d1041f5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='inspire']/div/nav/div/div/a/div[2]</value>
+         <value>//div[@id='inspire']/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -24,41 +24,34 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>v-list-item__content</value>
+      <value>v-application--wrap</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Dashboard</value>
+      <value>DashboardSettingsPeeBu Balance: -28645.57 € Settings​APIUpdate© 2020</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;inspire&quot;)/div[@class=&quot;v-application--wrap&quot;]/nav[@class=&quot;v-navigation-drawer v-navigation-drawer--clipped v-navigation-drawer--fixed v-navigation-drawer--is-mobile v-navigation-drawer--open theme--dark&quot;]/div[@class=&quot;v-navigation-drawer__content&quot;]/div[@class=&quot;v-list v-sheet v-sheet--tile theme--dark v-list--dense&quot;]/a[@class=&quot;v-list-item v-list-item--link theme--dark&quot;]/div[@class=&quot;v-list-item__content&quot;]</value>
+      <value>id(&quot;inspire&quot;)/div[@class=&quot;v-application--wrap&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='inspire']/div/nav/div/div/a/div[2]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Settings'])[1]/preceding::div[3]</value>
+      <value>//div[@id='inspire']/div</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//a/div[2]</value>
+      <value>//div/div/div/div</value>
    </webElementXpaths>
 </WebElementEntity>

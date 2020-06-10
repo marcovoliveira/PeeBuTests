@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Data saved Close</name>
+   <name>span_Update</name>
    <tag></tag>
-   <elementGuidId>dcdf2f9a-c1df-4c6f-9f5a-c4f990b84acb</elementGuidId>
+   <elementGuidId>57ce3767-e410-4e1b-9ab6-0362e2586be6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='inspire']/div/div/div/div[3]/div/div</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>id(&quot;inspire&quot;)/div[@class=&quot;v-application--wrap&quot;]/div[@class=&quot;home&quot;]/div[@class=&quot;v-card v-sheet theme--dark&quot;]/div[@class=&quot;v-snack v-snack--active v-snack--bottom&quot;]/div[@class=&quot;v-snack__wrapper success&quot;]/div[@class=&quot;v-snack__content&quot;]</value>
+         <value>//div[@id='inspire']/div/div/div/div[2]/button/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,62 +17,69 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
+      <value>span</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>v-snack__content</value>
+      <value>v-btn__content</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value> Data saved Close</value>
+      <value>Update</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;inspire&quot;)/div[@class=&quot;v-application--wrap&quot;]/div[@class=&quot;home&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;v-snack v-snack--active v-snack--bottom v-snack-transition-leave-active v-snack-transition-leave-to&quot;]/div[@class=&quot;v-snack__wrapper success&quot;]/div[@class=&quot;v-snack__content&quot;]</value>
+      <value>id(&quot;inspire&quot;)/div[@class=&quot;v-application--wrap&quot;]/div[@class=&quot;more&quot;]/div[@class=&quot;container container--fluid&quot;]/div[@class=&quot;col-sm-6 col-12&quot;]/button[@class=&quot;v-btn v-btn--contained theme--dark v-size--default&quot;]/span[@class=&quot;v-btn__content&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='inspire']/div/div/div/div[3]/div/div</value>
+      <value>//div[@id='inspire']/div/div/div/div[2]/button/span</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Choose a category...'])[8]/following::div[18]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='API'])[1]/following::span[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='© 2020'])[1]/preceding::div[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[1]/following::span[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Data saved']/parent::*</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='© 2020'])[1]/preceding::span[3]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Update']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div/div/div[3]/div/div</value>
+      <value>//div[2]/button/span</value>
    </webElementXpaths>
 </WebElementEntity>
