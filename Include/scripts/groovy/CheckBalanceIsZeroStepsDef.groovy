@@ -46,7 +46,7 @@ import cucumber.api.java.en.When
 class CheckBalanceIsZeroStepsDef {
 	@Then("the user verify the balance is {double}")
 	public void the_user_verify_the_balance_is(Double double1) {
-		WebUI.verifyTextPresent('Balance: '+ String.format("%.2f", double1) +' €', false)
+		WebUI.verifyTextPresent(String.format("%.2f", double1), false)
 			
 	}
 }
