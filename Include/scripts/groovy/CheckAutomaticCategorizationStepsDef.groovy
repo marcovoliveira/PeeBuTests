@@ -42,23 +42,30 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-class CheckCategorizeTransactionStepsDef {
 
-	@When("the user clicks to choose a category of a transaction")
-	public void the_user_clicks_at_a_category_icon_of_a_transaction() {
-		WebUI.click(findTestObject('Page_client/div_Choose a category'))
-	}
-	
-	@When("the user selects a category at a categories selection")
-	public void the_user_selects_a_category_at_a_categories_lookup() {
-		WebUI.click(findTestObject('Object Repository/Page_client/div_Selector'))
-		WebUI.click(findTestObject('Object Repository/Page_client/div_Food'))
-		WebUI.click(findTestObject('Page_client/span_Save'))
+class CheckAutomaticCategorizationStepsDef {
+	@When("the user activate automatic categorization")
+	public void the_user_activate_automatic_categorization() {
+		WebUI.click(findTestObject('Page_client/div_Transactions_v-input--selection-controls__ripple'))
 	}
 
-	@Then("the transaction is categorized")
-	public void the_transaction_is_categorized() {
-		WebUI.verifyElementVisible(findTestObject('Page_client/div_Data saved Close'))
-		WebUI.verifyElementVisible(findTestObject('Page_client/table1_Food'))
+	@Then("all transactions from the same entity are categorized")
+	public void all_transactions_from_the_same_entity_are_categorized() {
+		WebDriver driver = DriverFactory.getWebDriver()
+		List<WebElement> tableElements = driver.findElements(By.cssSelector("#inspire tr td:nth-child(7)"));
+		ArrayList<String> tableValues = new ArrayList<String>();
+		for(int i=0; i < tableElements.size(); i++){
+			String str = tableElements.get(i).getText();
+			tableValues.add(str);
+		}
+
+		ArrayList<String> referenceValues = new ArrayList<String>();
+		for(int i=0; i < tableValues.size(); i++){
+			referenceValues.add(tableValues.get(i))
+		}
+
+		Collections.sort(referenceValues)
+
+		assert referenceValues.equals(tableValues)
 	}
 }

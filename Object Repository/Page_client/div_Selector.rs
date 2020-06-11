@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <WebElementEntity>
    <description/>
-   <name>input_API_input-77</name>
+   <name>div_Selector</name>
    <tag/>
-   <elementGuidId>871907a1-4d45-4dfe-868a-dd2f945ea590</elementGuidId>
+   <elementGuidId>c254256c-2ac7-40c4-8061-7c875027f3dd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='inspire']/div/div/div/div[2]/div/div/div/div/input</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='© 2020'])[1]/following::div[6]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -17,48 +17,48 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>v-select__slot</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>text</name>
       <type>Main</type>
-      <value>input-77</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>text</value>
+      <value>CategoryChoose a category...</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id("input-77")</value>
+      <value>/html[1]/body[1]/div[@id="app"]/div[@class="v-menu__content theme--dark menuable__content__active v-small-dialog__menu-content"]/div[@class="v-small-dialog__content"]/div[@class="v-input v-input--is-label-active v-input--is-dirty v-input--is-focused theme--dark v-text-field v-text-field--filled v-text-field--is-booted v-text-field--enclosed v-select primary--text"]/div[@class="v-input__control"]/div[@class="v-input__slot"]/div[@class="v-select__slot"]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
+      <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//input[@id='input-77']</value>
+      <value>//div[@id='app']/div[2]/div/div/div/div/div</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//div[@id='inspire']/div/div/div/div[2]/div/div/div/div/input</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='© 2020'])[1]/following::div[6]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//input</value>
+      <value>//div[2]/div/div/div/div/div</value>
    </webElementXpaths>
 </WebElementEntity>
