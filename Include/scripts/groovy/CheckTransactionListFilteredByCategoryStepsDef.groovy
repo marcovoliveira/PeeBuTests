@@ -48,7 +48,7 @@ class CheckTransactionListFilteredByCategoryStepsDef {
 	@Given("a categorized list of transactions")
 	public void a_categorized_list_of_transactions() {
 		WebUI.click(findTestObject('Page_client/div_Choose a category'))
-		WebUI.click(findTestObject('Object Repository/Page_client/i_Choose a category_v-icon notranslate mdi _e7fef0'))
+		WebUI.click(findTestObject('Object Repository/Page_client/div_Selector'))
 		WebUI.click(findTestObject('Object Repository/Page_client/div_Food'))
 		WebUI.click(findTestObject('Page_client/span_Save'))
 	}

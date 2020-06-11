@@ -51,21 +51,19 @@ class CheckAutomaticCategorizationStepsDef {
 
 	@Then("all transactions from the same entity are categorized")
 	public void all_transactions_from_the_same_entity_are_categorized() {
+		WebUI.delay(1);
 		WebDriver driver = DriverFactory.getWebDriver()
 		List<WebElement> tableElements = driver.findElements(By.cssSelector("#inspire tr td:nth-child(7)"));
 		ArrayList<String> tableValues = new ArrayList<String>();
 		for(int i=0; i < tableElements.size(); i++){
-			String str = tableElements.get(i).getText();
+			String str = tableElements.get(i).getText();			
 			tableValues.add(str);
 		}
 
-		ArrayList<String> referenceValues = new ArrayList<String>();
-		for(int i=0; i < tableValues.size(); i++){
-			referenceValues.add(tableValues.get(i))
-		}
-
-		Collections.sort(referenceValues)
-
-		assert referenceValues.equals(tableValues)
+		assert "Food".equals(tableValues[0]);
+		assert "Food".equals(tableValues[1]);
+		assert "Choose a category...".equals(tableValues[2]);
+		
+		
 	}
 }
