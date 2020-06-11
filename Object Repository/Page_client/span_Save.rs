@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <WebElementEntity>
-   <description></description>
+   <description/>
    <name>span_Save</name>
-   <tag></tag>
+   <tag/>
    <elementGuidId>3ba9718b-97d8-4866-966b-dee58b520d19</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='app']/div[2]/div[2]/button[2]/span</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::span[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -38,7 +38,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[1]/div[@id=&quot;app&quot;]/div[@class=&quot;v-menu__content theme--dark menuable__content__active v-small-dialog__menu-content&quot;]/div[@class=&quot;v-small-dialog__actions&quot;]/button[@class=&quot;v-btn v-btn--flat v-btn--text theme--light v-size--default primary--text&quot;]/span[@class=&quot;v-btn__content&quot;]</value>
+      <value>/html[1]/body[1]/div[@id="app"]/div[@class="v-menu__content theme--dark menuable__content__active v-small-dialog__menu-content"]/div[@class="v-small-dialog__actions"]/button[@class="v-btn v-btn--flat v-btn--text theme--light v-size--default primary--text"]/span[@class="v-btn__content"]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
