@@ -62,6 +62,7 @@ class CheckTransactionsListStepsDef {
 
 	@When("the user has some transactions")
 	public void the_user_has_some_transactions() {
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_client/td_1'), 3)
 		WebUI.verifyElementVisible(findTestObject('Object Repository/Page_client/td_1'))
 	}
 

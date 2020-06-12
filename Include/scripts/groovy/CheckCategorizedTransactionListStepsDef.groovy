@@ -48,7 +48,7 @@ class CheckCategorizedTransactionListStepsDef {
 	@When("the user has the statistics option chosen at panel")
 	public void the_user_has_the_statistics_option_chosen_at_panel() {
 		WebUI.click(findTestObject('Object Repository/Page_client/i_Settings_v-icon notranslate mdi mdi-menu _d43718'))
-		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_client/a_Statistics'), 1)
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_client/a_Statistics'), 3)
 		WebUI.click(findTestObject('Object Repository/Page_client/a_Statistics'))
 	}
 
