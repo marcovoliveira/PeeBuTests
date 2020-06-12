@@ -58,4 +58,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/TestCaseCheckAutomaticCategorization</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>b0c755c7-3e0b-45c3-9b43-53a23a1b299e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TestCaseCheckCategorizedTransactionsList</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
