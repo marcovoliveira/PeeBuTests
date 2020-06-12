@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_DashboardSettingsPeeBu Transactions Sea_e9c091</name>
+   <tag></tag>
+   <elementGuidId>08114c9a-e371-4521-b3a0-fd604366759e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>e</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>v-application--wrap</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>DashboardSettingsPeeBu Transactions SearchIdEntityAmountTypeSourceDate1Wintheiser, Kuhn and Turcotte269.10debitbank account2019-06-16T21:09:14.933Z2Gislason - Rau433.10debitcash2019-09-16T13:19:55.227Z3Fritsch, Jacobson and Bruen71.86debitpaypal2020-02-09T03:00:20.801Z4Grant - Jakubowski347.17creditbank account2019-05-12T04:33:01.132Z5Collier, Wisoky and Gaylord905.98debitcash2019-08-07T23:07:42.826Z6Kutch LLC776.76debitpaypal2019-04-27T03:16:26.481Z7Thompson Group514.39debitsource 72019-11-23T09:47:14.071Z8Trantow - Medhurst480.42debitbank account2019-11-09T03:40:52.702Z9Johnson and Sons299.26debitcash2020-01-01T09:20:46.023Z10Bins - Wyman799.80debitcash2019-06-25T23:06:21.557ZRows per page:101-10 of 100© 2020</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;inspire&quot;)/div[@class=&quot;v-application--wrap&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='inspire']/div</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div/div</value>
+   </webElementXpaths>
+</WebElementEntity>
