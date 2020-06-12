@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <WebElementEntity>
-   <description></description>
-   <name>td_No data available</name>
-   <tag></tag>
-   <elementGuidId>1a766ec3-025b-4dd6-adbc-3316ef8f61c0</elementGuidId>
+   <description/>
+   <name>td_No data available dashboard</name>
+   <tag/>
+   <elementGuidId>38bd027d-56ab-4bd9-b510-deb608b9eb82</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='inspire']/div/div/div/div[2]/div/div/div[2]/div/table/tbody/tr/td</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Category'])[1]/following::td[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -38,7 +38,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;inspire&quot;)/div[@class=&quot;v-application--wrap&quot;]/div[@class=&quot;more&quot;]/div[@class=&quot;container container--fluid&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col&quot;]/div[@class=&quot;v-card v-sheet theme--dark&quot;]/div[@class=&quot;v-data-table theme--dark&quot;]/div[@class=&quot;v-data-table__wrapper&quot;]/table[1]/tbody[1]/tr[@class=&quot;v-data-table__empty-wrapper&quot;]/td[1]</value>
+      <value>id("inspire")/div[@class="v-application--wrap"]/div[@class="more"]/div[@class="container container--fluid"]/div[@class="row"]/div[@class="col"]/div[@class="v-card v-sheet theme--dark"]/div[@class="v-data-table theme--dark"]/div[@class="v-data-table__wrapper"]/table[1]/tbody[1]/tr[@class="v-data-table__empty-wrapper"]/td[1]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

@@ -3,9 +3,20 @@ Feature: See a categorized transaction list
 	I want to see a categorized list of transactions
 	So that I can more easily analyze transactions
 
-Scenario: Check if transactions are categorized at the list
-	Given the user has an open browser
-	When the user navigates to <site_name>
-	And the user has the transaction option chosen at panel <panel_id>
+Background: 
+		Given the user has an open browser
+		When the user navigates to site
+
+Scenario: Check table if categorized transactions don't exist
+	When the user has the statistics option chosen at panel
+	Then the user sees a empty transactions list
+
+Scenario: Check table if categorized transactions exist
+	When the user has the transaction option chosen at panel
 	And the user has some transactions
-	Then the user sees a transactions list <list_id> with category icon <icon_id> at each transaction
+	And the user clicks to choose a category of a transaction
+	And the user selects a category at a categories selection
+	And the user has the statistics option chosen at panel
+	Then the user sees a transactions list with 1 entry
+	
+	
