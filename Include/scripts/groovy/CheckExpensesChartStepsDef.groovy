@@ -42,29 +42,24 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-class CheckCategorizeTransactionStepsDef {
 
-	@When("the user clicks to choose a category of a transaction")
-	public void the_user_clicks_at_a_category_icon_of_a_transaction() {
-		WebUI.waitForElementVisible(findTestObject('Page_client/div_Choose a category'), 3)
-		WebUI.click(findTestObject('Page_client/div_Choose a category'))
+class CheckExpensesChartStepsDef {
+
+	@Then("the user sees a pie chart")
+	public void the_user_sees_a_pie_chart() {
+
+		WebUI.verifyElementVisible(findTestObject('Object Repository/Page_client/tspan_Expenses'))
 	}
 
-	@When("the user selects a category at a categories selection")
-	public void the_user_selects_a_category_at_a_categories_lookup() {
-		WebUI.waitForElementVisible(findTestObject('Page_client/div_Selector'), 3)
-		WebUI.click(findTestObject('Object Repository/Page_client/div_Selector'))
+	@Then("the user sees the {double} at {string}")
+	public void the_user_sees_the_at(Double double1, String string) {
+		// highcharts-vue can't be tested with katalon
+		//WebUI.waitForElementVisible(findTestObject('Object Repository/Page_client/pie'+string), 3)
+		//String text = WebUI.getText(findTestObject('Object Repository/Page_client/pie'+string));
+		//assert text == String.valueOf(double1);
+		//
+		//WebUI.verifyMatch(WebUI.getAttribute(findTestObject('Object Repository/Page_client/chartPie'), 'alt'),
+		//		'[{"name":"Education","y":113.72},{"name":"Food","y":41.86},{"name":"Household","y":433.72}]', false)
 
-		WebUI.waitForElementVisible(findTestObject('Page_client/div_Food'), 3)
-		WebUI.click(findTestObject('Object Repository/Page_client/div_Food'))
-
-		WebUI.waitForElementVisible(findTestObject('Page_client/span_Save'), 3)
-		WebUI.click(findTestObject('Page_client/span_Save'))
-	}
-
-	@Then("the transaction is categorized")
-	public void the_transaction_is_categorized() {
-		WebUI.verifyElementVisible(findTestObject('Page_client/div_Data saved Close'))
-		WebUI.verifyElementVisible(findTestObject('Page_client/table1_Food'))
 	}
 }
