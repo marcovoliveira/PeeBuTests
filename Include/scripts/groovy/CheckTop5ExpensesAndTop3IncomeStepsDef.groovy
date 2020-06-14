@@ -43,25 +43,59 @@ import cucumber.api.java.en.When
 
 
 
-class CheckAutomaticCategorizationStepsDef {
-	@When("the user activate automatic categorization")
-	public void the_user_activate_automatic_categorization() {
-		WebUI.click(findTestObject('Page_client/div_Transactions_v-input--selection-controls__ripple'))
-	}
-
-	@Then("all transactions from the same entity are categorized")
-	public void all_transactions_from_the_same_entity_are_categorized() {
+class CheckTop5ExpensesAndTop3IncomeStepsDef {
+	@Then("the user sees a list with top{int} expenses and top{int} incomes")
+	public void the_user_sees_a_list_with_top_expenses_and_top_incomes(Integer tableExpenseSize, Integer tableIncomeSize) {
 		WebUI.delay(1);
 		WebDriver driver = DriverFactory.getWebDriver()
-		List<WebElement> tableElements = driver.findElements(By.cssSelector("#inspire tr td:nth-child(7)"));
+
+		List<WebElement> tableElements = driver.findElements(By.cssSelector("#inspire #tableExpense tr td:nth-child(7)"));
 		ArrayList<String> tableValues = new ArrayList<String>();
 		for(int i=0; i < tableElements.size(); i++){
 			String str = tableElements.get(i).getText();
 			tableValues.add(str);
 		}
 
-		assert "Food".equals(tableValues[0]);
-		assert "Food".equals(tableValues[1]);
-		assert "Choose a category...".equals(tableValues[2]);
+		assert tableValues.size == tableExpenseSize;
+
+		List<WebElement> tableElements2 = driver.findElements(By.cssSelector("#inspire #tableIncome tr td:nth-child(7)"));
+		ArrayList<String> tableValues2 = new ArrayList<String>();
+		for(int i=0; i < tableElements2.size(); i++){
+			String str = tableElements2.get(i).getText();
+			tableValues2.add(str);
+		}
+
+		assert tableValues2.size == tableIncomeSize;
+	}
+
+
+	@Then("the user sees the {double} at {int} of tableExpense")
+	public void the_user_sees_the_at_of_tableExpenses(Double value, Integer position) {
+		WebUI.delay(1);
+		WebDriver driver = DriverFactory.getWebDriver()
+
+		List<WebElement> tableElements = driver.findElements(By.cssSelector("#inspire #tableExpense tr td:nth-child(3)"));
+		ArrayList<String> tableValues = new ArrayList<String>();
+		for(int i=0; i < tableElements.size(); i++){
+			String str = tableElements.get(i).getText();
+			tableValues.add(str);
+		}
+
+		assert Double.parseDouble(tableValues.get(position)) == value;
+	}
+
+	@Then("the user sees the {double} at {int} of tableIncome")
+	public void the_user_sees_the_at_of_tableIncome(Double value, Integer position) {
+		WebUI.delay(1);
+		WebDriver driver = DriverFactory.getWebDriver()
+
+		List<WebElement> tableElements = driver.findElements(By.cssSelector("#inspire #tableIncome tr td:nth-child(3)"));
+		ArrayList<String> tableValues = new ArrayList<String>();
+		for(int i=0; i < tableElements.size(); i++){
+			String str = tableElements.get(i).getText();
+			tableValues.add(str);
+		}
+
+		assert Double.parseDouble(tableValues.get(position)) == value;
 	}
 }

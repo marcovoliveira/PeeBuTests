@@ -61,7 +61,7 @@ class CheckCategorizedTransactionListStepsDef {
 	public void the_user_sees_a_transactions_list_with_entry(Integer entries) {
 		WebUI.delay(1);
 		WebDriver driver = DriverFactory.getWebDriver()
-		List<WebElement> tableElements = driver.findElements(By.cssSelector("#inspire tr td:nth-child(7)"));
+		List<WebElement> tableElements = driver.findElements(By.cssSelector("#inspire #table1 tr td:nth-child(7)"));
 		ArrayList<String> tableValues = new ArrayList<String>();
 		for(int i=0; i < tableElements.size(); i++){
 			String str = tableElements.get(i).getText();

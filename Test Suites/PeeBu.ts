@@ -64,4 +64,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/TestCaseCheckCategorizedTransactionsList</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>73c9ad9a-3892-4688-ba93-40b88e076929</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TestCaseCheckTop5ExpensesAndTop3Income</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
