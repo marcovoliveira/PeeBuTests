@@ -46,13 +46,19 @@ class CheckCategorizeTransactionStepsDef {
 
 	@When("the user clicks to choose a category of a transaction")
 	public void the_user_clicks_at_a_category_icon_of_a_transaction() {
+		WebUI.waitForElementVisible(findTestObject('Page_client/div_Choose a category'), 3)
 		WebUI.click(findTestObject('Page_client/div_Choose a category'))
 	}
-	
+
 	@When("the user selects a category at a categories selection")
 	public void the_user_selects_a_category_at_a_categories_lookup() {
+		WebUI.waitForElementVisible(findTestObject('Page_client/div_Selector'), 3)
 		WebUI.click(findTestObject('Object Repository/Page_client/div_Selector'))
+		
+		WebUI.waitForElementVisible(findTestObject('Page_client/div_Food'), 3)
 		WebUI.click(findTestObject('Object Repository/Page_client/div_Food'))
+		
+		WebUI.waitForElementVisible(findTestObject('Page_client/span_Save'), 3)
 		WebUI.click(findTestObject('Page_client/span_Save'))
 	}
 
