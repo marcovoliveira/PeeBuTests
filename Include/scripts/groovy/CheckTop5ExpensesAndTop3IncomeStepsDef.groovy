@@ -42,7 +42,6 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-
 class CheckTop5ExpensesAndTop3IncomeStepsDef {
 	@Then("the user sees a list with top{int} expenses and top{int} incomes")
 	public void the_user_sees_a_list_with_top_expenses_and_top_incomes(Integer tableExpenseSize, Integer tableIncomeSize) {

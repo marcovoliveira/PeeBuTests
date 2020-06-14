@@ -59,7 +59,7 @@ class CheckAutomaticCategorizationStepsDef {
 			String str = tableElements.get(i).getText();
 			tableValues.add(str);
 		}
-
+		
 		assert "Food".equals(tableValues[0]);
 		assert "Food".equals(tableValues[1]);
 		assert "Choose a category...".equals(tableValues[2]);
